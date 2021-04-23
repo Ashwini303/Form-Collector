@@ -1,0 +1,25 @@
+#panel, #flip{
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    background-color: #555;
+    color: white;
+    border: solid 1px #666;
+    border-radius: 3px;
+}
+
+#panel{
+    padding: 50px;
+    display: none;
+}
+
+#submit{
+    border: 2px solid black;
+    width: 60px;
+    background-color: white;
+    color: black !important;
+}
+
+body{
+    font-size: 20px;
+}

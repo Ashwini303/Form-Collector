@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery Intermediate</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="Form-jquery.css">
+
+</head>
+<body>
+    <h1>Jquery</h1>
+    <h1>Form Data Collector</h1>
+    <h3>Create a clone of this site with following funtionalities...</h3>
+    <ul>
+        <li>When you click on "Click to Show form" tab it'll give toggle effect and show a form in 5 seconds.</li>
+        <li>Meanwhile when the tab is opening the form if you click on "stop" button then the moving of tab <br>will get stopped,
+            if you again click on tab then it'll continue moving.</li>
+        <li>When uou enter into any input field then it'll be yellow,when you leave it then it'll be purple.</li>
+        <li>Submit button should be designed without using "button and input tag."</li>
+        <li>When you click on submit,it'll save the data using jquery and check if age is below 18 <br>then give warning
+            and you cant access the user data through replace button</li>
+        <li>Replace button will show the data submitted by user</li>
+        <li>It'll show first name,age,city,gender of the user using jquery</li>
+        <li>You've to grab the first name from the full name and print only the first name.</li>
+        <li>You've to create an object of some pincodes along with their city name <br> to check the oincode given by user and then print the city</li>
+    </ul>
+    <button id="stop">Stop opening the form</button>
+    <div id="flip">Click to show the form</div>
+    <form action="" id="panel">
+        <label for="name">full name</label>
+        <input type="text" name="name" id="name" value="Ashwini"><br><br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age"><br><br>
+
+        <label for="pincode">Pincode</label>
+        <input type="number" name="pincode" id="pincode"><br><br>
+
+        <input type="radio" name="gender" id="male" value="male"><label for="male">Male</label><br>
+
+        <input type="radio" name="gender" id="female" value="female"><label for="female">Female</label><br>
+
+        <input type="radio" name="gender" id="other" value="other"><label for="other">Other</label><br><br>
+        <center><div id="submit">Submit</div></center>     <!--we want to save data even after refreshing the page -->
+        <!--<input type="submit" id="submit">-->              <!--thats why we didnt use it becoz after refreshing page,the data will be lost-->
+        <!--#warning paragraph will come here-->
+    </form>
+
+    <h1>See the details of the user below here</h1>
+    <p id="data">I will be replaced by user data when you click the below button.</p>
+    <button id="replace">Replace</button>
+
+    <script src="Form-jquery.js"></script>
+</body>
+</html>
